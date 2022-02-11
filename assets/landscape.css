@@ -62,7 +62,7 @@ html{
     transform: translateX(50vw) translateY(50vh) scale(1);
     margin-top: -145px;
     margin-left: -145px;
-    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0.3s;
     transition-property: transform, -webkit-filter, margin-left, margin-top;
     transition-timing-function: ease, ease, ease, ease;
     -webkit-filter: blur(5px);
@@ -93,7 +93,7 @@ html{
     display: flex;
     align-items: center;
     left: 300%;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(0px);
@@ -123,7 +123,7 @@ html{
     position: fixed;
     bottom: 0;
     left: 32px;
-    transition-duration: 0.7s, 0.7s, 0.7s, 0.7s;
+    transition-duration: 0.7s, 0.7s, 0.7s, 0.3s;
     transition-property: transform, -webkit-filter, opacity, visibility;
     transition-timing-function: ease, ease, ease, ease;
     visibility: visible;
@@ -143,10 +143,10 @@ html{
 .landscape-gd-title-div{
     width: 170px;
     height: 100px;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -161,10 +161,10 @@ html{
 .landscape-ui-title-div{
     width: 170px;
     height: 100px;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -180,10 +180,10 @@ html{
 .landscape-id-title-div{
     width: 170px;
     height: 100px;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -208,10 +208,10 @@ html{
     height: 25vh;
     top: 20vh;
     left: 80vw;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -228,10 +228,10 @@ html{
     height: 28vh;
     top: 12vh;
     left: 45vw;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -250,10 +250,10 @@ html{
     height: 13vh;
     top: 45vh;
     left: 30vw;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -269,10 +269,10 @@ html{
     height: 21vh;
     top: 70vh;
     left: 37vw;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -289,10 +289,10 @@ html{
     height: 15vh;
     top: 23%;
     left: 5%;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -317,10 +317,10 @@ html{
 .gd-example-div-6 {
     width: 15vw;
     height: 30vh;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -333,10 +333,10 @@ html{
 .gd-example-div-7 {
     width: 15vw;
     height: 30vh;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -349,10 +349,10 @@ html{
 .gd-example-div-8 {
     width: 15vw;
     height: 30vh;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -372,10 +372,10 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    transition-duration: 0.3s, 0.7s, 0.7s;
+    transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, ease, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     visibility: visible;
     opacity: 1;
 }
@@ -448,7 +448,7 @@ html{
     transition-duration: 0.3s, 0.7s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, linear, ease;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     opacity: 1;
     font-size: 20px;
     display: flex;
@@ -460,7 +460,7 @@ html{
     transition-duration: 0.3s, 0.3s;
     transition-timing-function: ease, ease;
     transition-property: -webkit-filter, opacity;
-    -webkit-filter: blur(5px);
+    -webkit-filter: blur(4px);
     top: 50%;
     margin-top: -20vh;
     left: 130vw;
@@ -511,12 +511,9 @@ h5{
     -webkit-filter: blur(0px);
 
 }
-.blur{
-    -webkit-filter: blur(5px);
-
-}
 .moreBlur{
-    -webkit-filter: blur(15px);
+    -webkit-filter: blur(7px);
+    opacity: 0.7
 
 }
 .invisible {
