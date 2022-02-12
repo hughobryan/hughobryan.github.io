@@ -24,7 +24,7 @@ let isLogoMoved = false;
 if (isLogoMoved === false) {
     window.setTimeout(function () {
         document.getElementsByClassName("click").item(0).classList.add("unBlur");
-    }, 5000);
+    }, 3000);
 }
 
 function logoBlur() {
@@ -45,6 +45,8 @@ function startUp() {
     if (isLogoMoved === false) {
         document.getElementsByClassName("logo-div").item(0).classList.add("logo-move");
         document.getElementsByClassName("logo-div").item(0).classList.add("unBlur");
+        document.getElementsByClassName("logo-svg").item(0).addEventListener('click', function ers() {window.open("https://www.14ers.com/route.php?route=bros6", '_blank')})
+
         document.getElementsByClassName("click").item(0).classList.add("noOpacity");
         document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
         window.setTimeout(function () {
