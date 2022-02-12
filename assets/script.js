@@ -105,9 +105,12 @@ function gdSvg1Hover() {
     whatsHovered = 11;
     document.getElementsByClassName("gd-example-svg-1").item(0).addEventListener('click', osbClick);
     if (whatsClicked === 0) {
-        osbFocus(1);
+        osbFocus();
+        euhLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -127,9 +130,12 @@ function gdSvg2Hover() {
     whatsHovered = 12;
     document.getElementsByClassName("gd-example-svg-2").item(0).addEventListener('click', osbClick);
     if (whatsClicked === 0) {
-        osbFocus(1);
+        osbFocus();
+        euhLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -148,9 +154,12 @@ function gdSvg3Hover() {
     whatsHovered = 13;
     document.getElementsByClassName("gd-example-svg-3").item(0).addEventListener('click', euhClick);
     if (whatsClicked === 0) {
-        euhFocus(1);
+        euhFocus();
+        osbLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -170,9 +179,12 @@ function gdSvg4Hover() {
     whatsHovered = 14;
     document.getElementsByClassName("gd-example-svg-4").item(0).addEventListener('click', euhClick);
     if (whatsClicked === 0) {
-        euhFocus(1);
+        euhFocus();
+        osbLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -192,9 +204,12 @@ function gdSvg5Hover() {
     whatsHovered = 15;
     document.getElementsByClassName("gd-example-svg-5").item(0).addEventListener('click', euhClick);
     if (whatsClicked === 0) {
-        euhFocus(1);
+        euhFocus();
+        osbLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -213,9 +228,12 @@ function gdSvg6Hover() {
     whatsHovered = 16;
     document.getElementsByClassName("gd-example-svg-6").item(0).addEventListener('click', osbClick);
     if (whatsClicked === 0) {
-        osbFocus(1);
+        osbFocus();
+        euhLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -234,9 +252,12 @@ function gdSvg7Hover() {
     whatsHovered = 17;
     document.getElementsByClassName("gd-example-svg-7").item(0).addEventListener('click', osbClick);
     if (whatsClicked === 0) {
-        osbFocus(1);
+        osbFocus();
+        euhLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -255,9 +276,12 @@ function gdSvg8Hover() {
     whatsHovered = 18;
     document.getElementsByClassName("gd-example-svg-8").item(0).addEventListener('click', osbClick);
     if (whatsClicked === 0) {
-        osbFocus(1);
+        osbFocus();
+        euhLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -276,9 +300,12 @@ function gdSvg9Hover() {
     whatsHovered = 19;
     document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('click', euhClick);
     if (whatsClicked === 0) {
-        euhFocus(1);
+        euhFocus();
+        osbLessOpacity();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -299,7 +326,9 @@ function gdTitleHover() {
     if (whatsClicked === 0) {
         gdUnBlur();
         uiMoreBlur();
+        uiLessOpacity();
         idMoreBlur();
+        idLessOpacity();
         aboutMoreBlur();
     }
 }
@@ -321,6 +350,7 @@ function uiTitleHover() {
     if (whatsClicked === 0) {
         uiUnBlur();
         gdMoreBlur();
+        gdLessOpacity();
         idMoreBlur();
         aboutMoreBlur();
     }
@@ -342,6 +372,7 @@ function idTitleHover() {
     document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('click', idTitleClick);
     if (whatsClicked === 0) {
         gdMoreBlur();
+        gdLessOpacity();
         uiMoreBlur();
         idUnBlur();
         aboutMoreBlur();
@@ -374,8 +405,11 @@ function osbClick() {
 
 function osbFocus() {
     allBlur();
+    euhLessOpacity();
     uiMoreBlur();
+    uiLessOpacity();
     idMoreBlur();
+    idLessOpacity();
     aboutMoreBlur();
     document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseenter', gdTitleHover);
     document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseleave', gdTitleUnHover);
@@ -416,8 +450,11 @@ function euhClick() {
 
 function euhFocus() {
     allBlur();
+    osbLessOpacity();
     uiMoreBlur();
+    uiLessOpacity();
     idMoreBlur();
+    idLessOpacity();
     aboutMoreBlur();
     document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseenter', gdTitleHover);
     document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('mouseleave', gdTitleUnHover);
@@ -443,21 +480,17 @@ function gdTitleClick() {
     }
 }
 
-function gdFocus(inp) {
-    if (inp === 1) {
-        allBlur();
-        aboutMoreBlur();
-        document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick)
-        document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('click', idTitleClick)
-        addAllGdHovers();
-        gdUnBlur();
-        uiMoreBlur();
-        idMoreBlur();
-    } else if (inp === 0) {
-        allBlur();
-        gdUnBlur();
-        whatsClicked = 0;
-    }
+function gdFocus() {
+    allBlur();
+    addAllGdHovers();
+    gdUnBlur();
+    uiMoreBlur();
+    uiLessOpacity();
+    idMoreBlur();
+    idLessOpacity();
+    aboutMoreBlur();
+    document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick)
+    document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('click', idTitleClick)
 }
 
 function uiTitleClick() {
@@ -470,20 +503,18 @@ function uiTitleClick() {
     }
 }
 
-function uiFocus(inp) {
-    if (inp === 1) {
-        document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('click', gdTitleClick)
-        document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('click', idTitleClick)
-        allBlur();
-        addAllUiHovers();
-        gdMoreBlur();
-        uiUnBlur();
-        idMoreBlur();
-        aboutMoreBlur();
-    } else if (inp === 0) {
-        allBlur();
-        returnBlur();
-    }
+function uiFocus() {
+    allBlur();
+    addAllIdHovers();
+    gdMoreBlur();
+    gdLessOpacity();
+    uiUnBlur();
+    idMoreBlur();
+    idLessOpacity();
+    aboutMoreBlur();
+    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('click', gdTitleClick)
+    document.getElementsByClassName("landscape-id-title-div").item(0).addEventListener('click', uiTitleClick)
+
 }
 
 function idTitleClick() {
@@ -496,19 +527,17 @@ function idTitleClick() {
     }
 }
 
-function idFocus(inp) {
-    if (inp === 1) {
-        document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('click', gdTitleClick)
-        document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick)
-        allBlur();
-        addAllIdHovers();
-        gdMoreBlur();
-        uiMoreBlur();
-        idUnBlur();
-        aboutMoreBlur();
-    } else if (inp === 0) {
-        returnBlur();
-    }
+function idFocus() {
+    allBlur();
+    addAllIdHovers();
+    gdMoreBlur();
+    gdLessOpacity();
+    uiMoreBlur();
+    gdLessOpacity();
+    idUnBlur();
+    aboutMoreBlur();
+    document.getElementsByClassName("landscape-gd-title-div").item(0).addEventListener('click', gdTitleClick)
+    document.getElementsByClassName("landscape-ui-title-div").item(0).addEventListener('click', uiTitleClick)
 }
 
 function returnBlur() {
@@ -526,8 +555,9 @@ function returnBlur() {
 }
 
 function allBlur() {
-    window.removeEventListener('scroll', gdScrollFun);
     removeMoreBlur();
+    removeLessOpacity();
+    window.removeEventListener('scroll', gdScrollFun);
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.remove("unBlur");
     document.getElementsByClassName("landscape-ui-title-div").item(0).classList.remove("unBlur");
     document.getElementsByClassName("landscape-id-title-div").item(0).classList.remove("unBlur");
@@ -560,6 +590,22 @@ function removeMoreBlur() {
     document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("about-div").item(0).classList.remove("moreBlur");
+}
+
+function removeLessOpacity() {
+    document.getElementsByClassName("landscape-gd-title").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("landscape-ui-title").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("landscape-id-title").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-1").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-2").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-3").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-4").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-5").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-6").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-7").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-8").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-9").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("about").item(0).classList.remove("lessOpacity");
 }
 
 function gdUnBlur() {
@@ -600,12 +646,49 @@ function gdMoreBlur() {
     document.getElementsByClassName("gd-example-div-9").item(0).classList.add("moreBlur");
 }
 
+function gdLessOpacity() {
+    document.getElementsByClassName("landscape-gd-title").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-1").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-2").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-3").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-4").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-5").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-6").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-7").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-8").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-9").item(0).classList.add("lessOpacity");
+}
+
+function osbLessOpacity(){
+    document.getElementsByClassName("gd-example-svg-1").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-2").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-6").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-7").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-8").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-9").item(0).classList.add("lessOpacity");
+}
+
+function euhLessOpacity() {
+    document.getElementsByClassName("gd-example-svg-3").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-4").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-5").item(0).classList.add("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-9").item(0).classList.add("lessOpacity");
+}
+
 function uiMoreBlur() {
     document.getElementsByClassName("landscape-ui-title-div").item(0).classList.add("moreBlur");
 }
 
+function uiLessOpacity() {
+    document.getElementsByClassName("landscape-ui-title").item(0).classList.add("lessOpacity");
+}
+
 function idMoreBlur() {
     document.getElementsByClassName("landscape-id-title-div").item(0).classList.add("moreBlur");
+}
+
+function idLessOpacity() {
+    document.getElementsByClassName("landscape-id-title").item(0).classList.add("lessOpacity");
 }
 
 function removeAllTitleHovers() {
