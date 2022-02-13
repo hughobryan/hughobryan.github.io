@@ -94,7 +94,10 @@ html{
     visibility: visible;
     opacity: 1;
 }
-.click {
+.hoverandclick {
+    visibility: hidden;
+}
+.tap {
     visibility: hidden;
 }
 .copyright {
@@ -119,7 +122,7 @@ html{
     left: 50vw;
     margin-top: -25px;
     margin-left: -200px;
- }
+}
 #sections-landscape{
     visibility: hidden;
 }
@@ -129,17 +132,41 @@ html{
 #content {
     visibility: hidden;
 }
-
 h1{
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 500;
     font-variant: small-caps;
 }
+h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+h3{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    line-height: 100px;
+}
 h4{
-    font-family: 'Quatro';
+    text-align: justify;
+    font-family: 'Quatro', sans-serif;
     font-weight: 300;
     line-height: 25px;
-    font-size: 20px;
+    font-size: 16px;
+}
+h5{
+    text-align: justify;
+    font-family: 'Quatro', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 16px;
+}
+h6{
+    text-align: center;
+    font-family: 'Quatro', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 16px;
 }
 /*Modification Classes */
 .unBlur{

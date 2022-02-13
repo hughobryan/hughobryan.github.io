@@ -20,17 +20,7 @@ html{
 }
 #container {
     height: 100%;
-
 }
-#content {
-    height: 100%;
-    z-index: -2;
-}
-#graphic-design {
-    width: 200vw;
-}
-/* End Set Up*/
-/* Header */
 #header{
     display: flex;
     flex-direction: row;
@@ -42,6 +32,24 @@ html{
     min-height: 144.8px;
     z-index: 2;
 }
+#content {
+    top: 0;
+    z-index: -2;
+    overflow: hidden;
+}
+#bottom{
+    position: fixed;
+    bottom: 0;
+    height: 144.8px;
+    width: 100%;
+    z-index: 5;
+}
+#graphic-design {
+    width: 200vw;
+}
+/* End Set Up*/
+/* Header */
+
 #brand{
     position: relative;
     display: flex;
@@ -98,7 +106,23 @@ html{
     visibility: visible;
     opacity: 1;
 }
-.click {
+.hoverandclick {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 50vh;
+    left: 50vw;
+    margin-top: 80px;
+    margin-left: -75px;
+    text-align: center;
+    transition-duration: 2.5s, 0.7s;
+    transition-property: -webkit-filter, opacity;
+    transition-timing-function: ease, ease;
+    -webkit-filter: blur(75px);
+    opacity: 1;
+    font-size: 16px;
+}
+.tap {
     position: absolute;
     width: 150px;
     height: 50px;
@@ -117,6 +141,7 @@ html{
 .mobile-coming-soon {
     visibility: hidden;
 }
+
 .copyright {
     position: fixed;
     bottom: 0;
@@ -124,7 +149,6 @@ html{
     transition-duration: 0.7s, 0.7s, 0.7s, 0s;
     transition-property: transform, -webkit-filter, opacity, visibility;
     transition-timing-function: ease, ease, ease, ease;
-    visibility: visible;
     opacity: 1;
 }
 #sections-landscape{
@@ -357,7 +381,6 @@ html{
 }
 .gd-example-svg-5 {
     width: 80%;
-    height: 70%;
     transition-property: opacity;
     transition-duration: 0.3s;
     transition-timing-function: ease;
@@ -480,47 +503,52 @@ html{
     -webkit-transform-style: preserve-3d;
     -webkit-transform: translateZ(0);
 }
-.gd-osb-description-left {
-    position: absolute;
-    top: 19vh;
-    left: 11.5vw;
-    min-width: 200px;
-    width: 27vw;
-    transition-duration: 0.3s, 0s, 0.3s;
-    transition-delay: 0s, 0s, 0s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, linear, ease;
+.gd-osb-description {
+    position: fixed;
+    bottom: 0;
+    right: 34px;
+    width: 936px;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
     -webkit-filter: blur(0px);
     visibility: visible;
     opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1076px) {
+    .gd-osb-description {
+        transform: translateY(-32px);
+    }
+}
+
+@media screen and (max-width: 893px) {
+    .gd-osb-description {
+        left: 34px;
+        justify-content: flex-start;
+    }
+}
+
+.gd-euh-description {
+    position: fixed;
+    bottom: 0;
+    right: 34px;
+    width: 936px;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
 
 }
-.gd-osb-description-right {
-    position: absolute;
-    top: 19vh;
-    left: 120vw;
-    min-width: 200px;
-    width: 27vw;
-    transition-duration: 0.3s, 0s, 0.3s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, linear, ease;
-    -webkit-filter: blur(0px);
-    visibility: visible;
-    opacity: 1;
-}
-.gd-euh-description {
-    position: absolute;
-    top: 17vh;
-    left: 62vw;
-    min-width: 180px;
-    width: 27vw;
-    transition-duration: 0.3s, 0s, 0.3s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, linear, ease;
-    -webkit-filter: blur(0px);
-    visibility: visible;
-    opacity: 1;
-}
+
 .gd-description {
     position: absolute;
     top: 25vh;
@@ -594,13 +622,25 @@ h4{
     font-family: 'Quatro', sans-serif;
     font-weight: 300;
     line-height: 25px;
-    font-size: 1vw;
+    font-size: 16px;
 }
 h5{
+    text-align: justify;
     font-family: 'Quatro', sans-serif;
     font-weight: 300;
-    line-height: 20px;
-    font-size: 20px;
+    line-height: 25px;
+    font-size: 16px;
+}
+h6{
+    font-family: 'Quatro', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    font-size: 16px;
+}
+@media screen and (max-width: 895px) {
+    h5 {
+        font-size: 1.79vw;
+    }
 }
 /* End Text */
 
