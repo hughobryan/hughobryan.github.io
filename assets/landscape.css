@@ -549,19 +549,6 @@ html{
 
 }
 
-.gd-description {
-    position: absolute;
-    top: 25vh;
-    left: 76vw;
-    min-width: 380px;
-    width: 27vw;
-    transition-duration: 0.3s, 0s, 0.3s;
-    transition-property: -webkit-filter, visibility, opacity;
-    transition-timing-function: ease, linear, ease;
-    -webkit-filter: blur(0px);
-    visibility: visible;
-    opacity: 1;
-}
 /* End Sections */
 .coming-soon {
     position: fixed;

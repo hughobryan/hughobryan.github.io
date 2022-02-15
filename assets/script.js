@@ -4,7 +4,7 @@ let whatsHovered = 0;
 let whatsClicked = 0;
 window.scrollTo(0, 0);
 
-if (touches > 0) {
+if (matchMedia('(pointer:coarse)').matches) {
     document.getElementsByClassName("name").item(0).classList.remove("invisible");
     document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
 }
@@ -12,7 +12,7 @@ if (touches > 0) {
 
 
 /*Beginning of Desktop UI*/
-if (touches === 0) {
+if (matchMedia('(pointer:fine)').matches) {
     /* Beginning of Start Up */
     document.getElementsByClassName("logo-svg").item(0).addEventListener('click', startUp);
     document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseenter', logoUnBlur);
