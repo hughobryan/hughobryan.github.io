@@ -503,6 +503,34 @@ html{
     -webkit-transform-style: preserve-3d;
     -webkit-transform: translateZ(0);
 }
+.gd-example-div-10 {
+    position: absolute;
+    width: 16vw;
+    height: 20vw;
+    top: 63vh;
+    left: 120vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+}
+.gd-example-svg-10 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+}
 .gd-osb-description {
     position: fixed;
     bottom: 0;
@@ -546,7 +574,6 @@ html{
     opacity: 1;
     display: flex;
     justify-content: flex-end;
-
 }
 
 /* End Sections */
@@ -562,7 +589,6 @@ html{
     transition-duration: 0.3s, 0s, 0.3s;
     transition-property: -webkit-filter, visibility, opacity;
     transition-timing-function: ease, linear, ease;
-    -webkit-filter: blur(4px);
     opacity: 1;
     font-size: 20px;
     display: flex;
@@ -577,7 +603,7 @@ html{
     -webkit-filter: blur(4px);
     top: 50%;
     margin-top: -20vh;
-    left: 130vw;
+    left: 155vw;
     min-width: 380px;
     width: 40vw;
     height: 40vh;
@@ -586,7 +612,7 @@ html{
     align-items: center;
 }
 .about {
-    width: 70%;
+    width: 30vw;
 }
 /* Text */
 h1{
