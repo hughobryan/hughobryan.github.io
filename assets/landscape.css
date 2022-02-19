@@ -95,7 +95,7 @@ html{
 }
 .name {
     height: 100%;
-    min-width: 220px;
+    min-width: 232px;
     display: flex;
     align-items: center;
     left: 300%;
@@ -259,10 +259,10 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-1 {
     width: 55%;
@@ -275,7 +275,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-2 {
     position: absolute;
@@ -288,11 +288,11 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 0;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-2 {
     width: 75%;
@@ -306,7 +306,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-3 {
     position: absolute;
@@ -322,6 +322,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-3 {
     width: 75%;
@@ -333,7 +334,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-4 {
     position: absolute;
@@ -346,10 +347,10 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-4 {
     width: 75%;
@@ -362,7 +363,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-5 {
     position: absolute;
@@ -378,6 +379,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-5 {
     width: 80%;
@@ -389,7 +391,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-examples-div-678 {
     position: absolute;
@@ -413,6 +415,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-6 {
     width: 70%;
@@ -424,7 +427,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-7 {
     width: 15vw;
@@ -437,6 +440,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-7 {
     width: 70%;
@@ -448,7 +452,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-8 {
     width: 15vw;
@@ -461,6 +465,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-8 {
     width: 70%;
@@ -472,7 +477,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-9 {
     position: absolute;
@@ -489,7 +494,7 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
-
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-9 {
     width: 70%;
@@ -501,7 +506,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-div-10 {
     position: absolute;
@@ -518,6 +523,7 @@ html{
     transition-timing-function: ease, ease, ease;
     -webkit-filter: blur(4px);
     visibility: visible;
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-10 {
     width: 70%;
@@ -529,7 +535,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
 }
 .gd-osb-description {
     position: fixed;
