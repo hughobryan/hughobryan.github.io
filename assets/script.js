@@ -168,7 +168,7 @@ function gd4Hover() {
 function gd4Unhover() {
     isSomethingHovered = 0;
     if (whatsClicked === 0) {
-        reset;
+        reset();
     }
 }
 function gd5Hover() {
