@@ -115,7 +115,7 @@ html{
     margin-top: 80px;
     margin-left: -75px;
     text-align: center;
-    transition-duration: 2.5s, 0.7s;
+    transition-duration: 2s, 2s;
     transition-property: -webkit-filter, opacity;
     transition-timing-function: ease, ease;
     -webkit-filter: blur(75px);
@@ -146,7 +146,7 @@ html{
     position: fixed;
     bottom: 0;
     left: 32px;
-    transition-duration: 0.7s, 0.7s, 0.7s, 0s;
+    transition-duration: 0.3s, 0.3s, 0.3s, 0s;
     transition-property: transform, -webkit-filter, opacity, visibility;
     transition-timing-function: ease, ease, ease, ease;
     opacity: 1;
@@ -292,6 +292,7 @@ html{
     align-items: center;
     justify-content: center;
     z-index: 0;
+    -webkit-backface-visibility: hidden;
     -webkit-transform: translate3d(0,0,0);
 }
 .gd-example-svg-2 {
@@ -306,7 +307,7 @@ html{
     -webkit-perspective: 1000;
     -webkit-font-smoothing: antialiased;
     -webkit-transform-style: preserve-3d;
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
 }
 .gd-example-div-3 {
     position: absolute;
@@ -537,6 +538,34 @@ html{
     -webkit-transform-style: preserve-3d;
     -webkit-transform: translate3d(0,0,0);
 }
+.gd-example-div-11 {
+    position: absolute;
+    width: 25vw;
+    top: 30vh;
+    left: 108vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    -webkit-transform: translate3d(0,0,0);
+}
+.gd-example-svg-11 {
+    width: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,0);
+}
 .gd-osb-description {
     position: fixed;
     bottom: 0;
@@ -567,6 +596,21 @@ html{
 }
 
 .gd-euh-description {
+    position: fixed;
+    bottom: 0;
+    right: 34px;
+    width: 936px;
+    transition-duration: 0.3s, 0s, 0.3s, 0.3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+    transition-property: -webkit-filter, visibility, opacity, transform;
+    transition-timing-function: ease, linear, ease, ease;
+    -webkit-filter: blur(0px);
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.gd-misc-description {
     position: fixed;
     bottom: 0;
     right: 34px;

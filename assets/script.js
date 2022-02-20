@@ -19,7 +19,7 @@ if (matchMedia('(pointer:fine)').matches) {
     if (isLogoMoved === false) {
         window.setTimeout(function () {
             document.getElementsByClassName("hoverandclick").item(0).classList.add("unBlur");
-        }, 3000);
+        }, 1000);
     }
     function logoBlur() {
         let logo = document.getElementsByClassName("logo-div").item(0);
@@ -76,6 +76,9 @@ if (matchMedia('(pointer:fine)').matches) {
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-1").item(0).classList.remove("invisible");
             }, 1000)
+            window.setTimeout(function () {
+                document.getElementsByClassName("gd-example-div-11").item(0).classList.remove("invisible");
+            }, 1600)
             window.setTimeout(function () {
                 document.getElementsByClassName("landscape-gd-title-div").item(0).classList.remove("invisible");
             }, 1100)
@@ -279,6 +282,24 @@ function gd10Unhover() {
         reset();
     }
 }
+function gd11Hover() {
+    isSomethingHovered = 1;
+    if (whatsClicked === 0) {
+        returnAll();
+        gdOsbUnfocus();
+        gdOsbUnfocus();
+        gdMiscFocus();
+        uiAllUnfocus();
+        idAllUnfocus();
+        aboutUnfocus();
+    }
+}
+function gd11Unhover() {
+    isSomethingHovered = 0;
+    if (whatsClicked === 0) {
+        reset();
+    }
+}
 function gdTitHover() {
     isSomethingHovered = 1;
     if (whatsClicked === 0) {
@@ -434,6 +455,7 @@ function addAllClicks() {
     document.getElementsByClassName("gd-example-svg-8").item(0).addEventListener('click', gdOsbClick);
     document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('click', gdEuhClick);
     document.getElementsByClassName("gd-example-svg-10").item(0).addEventListener('click', gdMiscClick);
+    document.getElementsByClassName("gd-example-svg-11").item(0).addEventListener('click', gdMiscClick);
     document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('click', gdTitClick);
     document.getElementsByClassName("landscape-ui-title").item(0).addEventListener('click', uiTitClick);
     document.getElementsByClassName("landscape-id-title").item(0).addEventListener('click', idTitClick);
@@ -460,6 +482,8 @@ function addAllHovers() {
     document.getElementsByClassName("gd-example-svg-9").item(0).addEventListener('mouseleave', gd9Unhover);
     document.getElementsByClassName("gd-example-svg-10").item(0).addEventListener('mouseenter', gd10Hover);
     document.getElementsByClassName("gd-example-svg-10").item(0).addEventListener('mouseleave', gd10Unhover);
+    document.getElementsByClassName("gd-example-svg-11").item(0).addEventListener('mouseenter', gd11Hover);
+    document.getElementsByClassName("gd-example-svg-11").item(0).addEventListener('mouseleave', gd11Unhover);
     document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseenter', gdTitHover);
     document.getElementsByClassName("landscape-gd-title").item(0).addEventListener('mouseleave', gdTitUnhover);
     document.getElementsByClassName("landscape-ui-title").item(0).addEventListener('mouseenter', uiTitHover);
@@ -510,12 +534,16 @@ function gdEuhUnfocus(){
 }
 function gdMiscFocus() {
     document.getElementsByClassName("gd-example-div-10").item(0).classList.add('unBlur');
+    document.getElementsByClassName("gd-example-div-11").item(0).classList.add('unBlur');
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add('unBlur')
+    document.getElementsByClassName("gd-misc-description").item(0).classList.remove('invisible')
 }
 function gdMiscUnfocus(){
     document.getElementsByClassName("gd-example-div-10").item(0).classList.add('moreBlur');
     document.getElementsByClassName("gd-example-svg-10").item(0).classList.add('lessOpacity');
-    }
+    document.getElementsByClassName("gd-example-div-11").item(0).classList.add('moreBlur');
+    document.getElementsByClassName("gd-example-svg-11").item(0).classList.add('lessOpacity');
+}
 function gdAllFocus(){
     document.getElementsByClassName("gd-example-div-1").item(0).classList.add('unBlur');
     document.getElementsByClassName("gd-example-div-2").item(0).classList.add('unBlur');
@@ -527,6 +555,7 @@ function gdAllFocus(){
     document.getElementsByClassName("gd-example-div-8").item(0).classList.add('unBlur');
     document.getElementsByClassName("gd-example-div-9").item(0).classList.add('unBlur');
     document.getElementsByClassName("gd-example-div-10").item(0).classList.add('unBlur');
+    document.getElementsByClassName("gd-example-div-11").item(0).classList.add('unBlur');
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add('unBlur')
 }
 function gdAllUnfocus(){
@@ -540,6 +569,7 @@ function gdAllUnfocus(){
     document.getElementsByClassName("gd-example-div-8").item(0).classList.add('moreBlur');
     document.getElementsByClassName("gd-example-div-9").item(0).classList.add('moreBlur');
     document.getElementsByClassName("gd-example-div-10").item(0).classList.add('moreBlur');
+    document.getElementsByClassName("gd-example-div-11").item(0).classList.add('moreBlur');
     document.getElementsByClassName("landscape-gd-title-div").item(0).classList.add('moreBlur');
     document.getElementsByClassName("gd-example-svg-1").item(0).classList.add('lessOpacity');
     document.getElementsByClassName("gd-example-svg-2").item(0).classList.add('lessOpacity');
@@ -551,6 +581,7 @@ function gdAllUnfocus(){
     document.getElementsByClassName("gd-example-svg-8").item(0).classList.add('lessOpacity');
     document.getElementsByClassName("gd-example-svg-9").item(0).classList.add('lessOpacity');
     document.getElementsByClassName("gd-example-svg-10").item(0).classList.add('lessOpacity');
+    document.getElementsByClassName("gd-example-svg-11").item(0).classList.add('lessOpacity');
     document.getElementsByClassName("landscape-gd-title").item(0).classList.add('lessOpacity');
 }
 
@@ -602,6 +633,7 @@ function removeAllMoreBlur() {
     document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("gd-example-div-10").item(0).classList.remove("moreBlur");
+    document.getElementsByClassName("gd-example-div-11").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("about-div").item(0).classList.remove("moreBlur");
     document.getElementsByClassName("about-div").item(0).classList.remove("moreBlur");
 }
@@ -619,6 +651,7 @@ function removeAllLessOpacity() {
     document.getElementsByClassName("gd-example-svg-8").item(0).classList.remove("lessOpacity");
     document.getElementsByClassName("gd-example-svg-9").item(0).classList.remove("lessOpacity");
     document.getElementsByClassName("gd-example-svg-10").item(0).classList.remove("lessOpacity");
+    document.getElementsByClassName("gd-example-svg-11").item(0).classList.remove("lessOpacity");
     document.getElementsByClassName("about").item(0).classList.remove("lessOpacity");
     document.getElementsByClassName("about").item(0).classList.remove("lessOpacity")
 }
@@ -636,13 +669,13 @@ function removeAllUnBlur() {
     document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("unBlur");
     document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("unBlur");
     document.getElementsByClassName("gd-example-div-10").item(0).classList.remove("unBlur");
+    document.getElementsByClassName("gd-example-div-11").item(0).classList.remove("unBlur");
 }
 function hideAllDescriptors() {
     document.getElementsByClassName("gd-osb-description").item(0).classList.add('invisible');
     document.getElementsByClassName("gd-euh-description").item(0).classList.add('invisible');
-    document.getElementsByClassName("coming-soon").item(0).classList.remove("unBlur");
+    document.getElementsByClassName("gd-misc-description").item(0).classList.add('invisible');
     document.getElementsByClassName("coming-soon").item(0).classList.add("invisible");
-
 }
 function aboutUnfocus() {
     document.getElementsByClassName("about-div").item(0).classList.add("moreBlur");
