@@ -48,8 +48,8 @@ html{
     width: 200vw;
 }
 /* End Set Up*/
-/* Header */
 
+/* Header */
 #brand{
     position: relative;
     display: flex;
@@ -141,7 +141,6 @@ html{
 .mobile-coming-soon {
     visibility: hidden;
 }
-
 .copyright {
     position: fixed;
     bottom: 0;
@@ -513,7 +512,7 @@ html{
     position: absolute;
     width: 16vw;
     height: 20vw;
-    top: 63vh;
+    top: 60vh;
     left: 120vw;
     display: flex;
     flex-direction: row;
@@ -541,7 +540,7 @@ html{
 .gd-example-div-11 {
     position: absolute;
     width: 25vw;
-    top: 30vh;
+    top: 20vh;
     left: 108vw;
     display: flex;
     flex-direction: row;
@@ -566,6 +565,35 @@ html{
     -webkit-transform-style: preserve-3d;
     -webkit-transform: translate3d(0,0,0);
 }
+.gd-example-div-12 {
+    position: absolute;
+    height: 100vh;
+    top: 0vh;
+    left: 144vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, ease, ease;
+    -webkit-filter: blur(4px);
+    visibility: visible;
+    -webkit-transform: translate3d(0,0,0);
+}
+.gd-example-svg-12 {
+    height: 70%;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translate3d(0,0,0);
+}
+
 .gd-osb-description {
     position: fixed;
     bottom: 0;
@@ -581,20 +609,17 @@ html{
     display: flex;
     justify-content: flex-end;
 }
-
 @media screen and (max-width: 1076px) {
     .gd-osb-description {
         transform: translateY(-32px);
     }
 }
-
 @media screen and (max-width: 893px) {
     .gd-osb-description {
         left: 34px;
         justify-content: flex-start;
     }
 }
-
 .gd-euh-description {
     position: fixed;
     bottom: 0;
