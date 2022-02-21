@@ -40,6 +40,7 @@ if (matchMedia('(pointer:fine)').matches) {
                 window.open("https://www.14ers.com/route.php?route=bros6", '_blank')
             })
             document.getElementsByClassName("hoverandclick").item(0).classList.add("noOpacity");
+            document.getElementsByClassName("hoverandclick").item(0).classList.add("invisible");
             document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
             window.setTimeout(function () {
                 document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
