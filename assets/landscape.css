@@ -672,9 +672,10 @@ html{
 }
 .about-div {
     position: absolute;
-    transition-duration: 0.3s, 0.3s;
-    transition-timing-function: ease, ease;
-    transition-property: -webkit-filter, opacity;
+    transition-duration: 0.3s, 0s, 0.3s;
+    transition-property: -webkit-filter, visibility, opacity;
+    transition-timing-function: ease, linear, ease;
+    opacity: 1;
     -webkit-filter: blur(4px);
     top: 50%;
     margin-top: -20vh;

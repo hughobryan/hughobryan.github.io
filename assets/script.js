@@ -33,6 +33,7 @@ if (matchMedia('(pointer:fine)').matches) {
         }
     }
     function startUp() {
+        x = 1000
         if (isLogoMoved === false) {
             document.getElementsByClassName("logo-div").item(0).classList.add("logo-move");
             document.getElementsByClassName("logo-div").item(0).classList.add("unBlur");
@@ -44,58 +45,61 @@ if (matchMedia('(pointer:fine)').matches) {
             document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
             window.setTimeout(function () {
                 document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
-            }, 800);
+            }, 1.1 * x);
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-5").item(0).classList.remove("invisible");
-            }, 900)
+            }, 1.2 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-9").item(0).classList.remove("invisible");
-            }, 1000)
-            window.setTimeout(function () {
-                document.getElementsByClassName("gd-example-div-2").item(0).classList.remove("invisible");
-            }, 1000)
+            }, 1.2 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-3").item(0).classList.remove("invisible");
-            }, 1000)
+            }, 1.3 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-4").item(0).classList.remove("invisible");
-            }, 1100)
+            }, 1.35 * x)
+            window.setTimeout(function () {
+                document.getElementsByClassName("gd-example-div-2").item(0).classList.remove("invisible");
+            }, 1.4 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-6").item(0).classList.remove("invisible");
-            }, 1200)
+            }, 1.45 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-7").item(0).classList.remove("invisible");
-            }, 1300)
+            }, 1.5 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-8").item(0).classList.remove("invisible");
-            }, 1400)
-            window.setTimeout(function () {
-                document.getElementsByClassName("gd-example-div-10").item(0).classList.remove("invisible");
-            }, 1500)
+            }, 1.55 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-1").item(0).classList.remove("invisible");
-            }, 1000)
+            }, 1.52 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-11").item(0).classList.remove("invisible");
-            }, 1600)
+            }, 1.6 * x)
+            window.setTimeout(function () {
+                document.getElementsByClassName("gd-example-div-10").item(0).classList.remove("invisible");
+            }, 1.65 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-12").item(0).classList.remove("invisible");
-            }, 1700)
+            }, 1.7 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("landscape-gd-title-div").item(0).classList.remove("invisible");
-            }, 1100)
+            }, 1.47 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("landscape-ui-title-div").item(0).classList.remove("invisible");
-            }, 1150)
+            }, 1.5 * x)
             window.setTimeout(function () {
                 document.getElementsByClassName("landscape-id-title-div").item(0).classList.remove("invisible");
-            }, 1200)
+            }, 1.54 * x)
+            window.setTimeout(function () {
+                document.getElementsByClassName("about-div").item(0).classList.remove("invisible");
+                document.getElementsByClassName("about-div").item(0).classList.add("unBlur");
+
+            }, 1.75 * x)
             document.body.style.overflow = "visible";
             addAllHovers();
             addAllClicks();
             document.getElementById("container").addEventListener('click', reset)
-            document.getElementsByClassName("about-div").item(0).classList.remove("invisible")
-            document.getElementsByClassName("about-div").item(0).classList.add("unBlur")
             document.body.style.overflow = "visible";
             isLogoMoved = true;
         }
