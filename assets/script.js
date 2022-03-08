@@ -14,6 +14,7 @@ if (matchMedia('(pointer:fine)').matches) {
     document.getElementsByClassName("logo-svg").item(0).addEventListener('click', startUp);
     document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseenter', logoUnBlur);
     document.getElementsByClassName("logo-svg").item(0).addEventListener('mouseleave', logoBlur);
+    document.getElementsByClassName("tap").item(0).classList.add('invisible');
 
     if (isLogoMoved === false) {
         window.setTimeout(function () {
@@ -40,11 +41,9 @@ if (matchMedia('(pointer:fine)').matches) {
             document.getElementsByClassName("logo-svg").item(0).addEventListener('click', function ers() {
                 window.open("https://www.14ers.com/route.php?route=bros6", '_blank')
             })
-            document.getElementsByClassName("hoverandclick").item(0).classList.add("noOpacity");
-            document.getElementsByClassName("hoverandclick").item(0).classList.add("invisible");
             document.getElementsByClassName("copyright").item(0).classList.remove("invisible");
             window.setTimeout(function () {
-                document.getElementsByClassName("name invisible").item(0).classList.remove("invisible");
+                document.getElementsByClassName("name").item(0).classList.remove("invisible");
             }, 1.1 * x);
             window.setTimeout(function () {
                 document.getElementsByClassName("gd-example-div-5").item(0).classList.remove("invisible");
@@ -102,6 +101,8 @@ if (matchMedia('(pointer:fine)').matches) {
             document.getElementById("container").addEventListener('click', reset)
             document.body.style.overflow = "visible";
             isLogoMoved = true;
+            document.getElementsByClassName("hoverandclick").item(0).classList.remove("unBlur");
+            document.getElementsByClassName("hoverandclick").item(0).classList.add("invisible");
         }
     }
 }

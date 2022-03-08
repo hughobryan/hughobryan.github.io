@@ -736,11 +736,9 @@ h6{
 /*Modification Classes */
 .unBlur{
     -webkit-filter: blur(0px);
-
 }
 .moreBlur{
     -webkit-filter: blur(7px);
-
 }
 .lessOpacity{
     opacity: 0.8;
