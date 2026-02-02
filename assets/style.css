@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 250px;
+    height: auto;
+}
+
+#logo svg {
+    width: 100%;
+    height: auto;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#coming-soon {
+    margin-top: -30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#theme-toggle {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+#theme-toggle svg {
+    width: 20px;
+    height: 20px;
+}
+
+#moon-icon {
+    display: none;
+}
+
+#copyright {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #666;
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] {
+    background-color: #0A1628;
+}
+
+html[data-theme="dark"] #logo svg path {
+    fill: white;
+}
+
+html[data-theme="dark"] #coming-soon {
+    color: white;
+}
+
+html[data-theme="dark"] #theme-toggle {
+    color: #999;
+}
+
+html[data-theme="dark"] #sun-icon {
+    display: none;
+}
+
+html[data-theme="dark"] #moon-icon {
+    display: block;
+}
+
+html[data-theme="dark"] #copyright {
+    color: #999;
+}
+
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme="light"]) body,
+    html:not([data-theme="light"]) {
+        background-color: #0A1628;
+    }
+
+    html:not([data-theme="light"]) #logo svg path {
+        fill: white;
+    }
+
+    html:not([data-theme="light"]) #coming-soon {
+        color: white;
+    }
+
+    html:not([data-theme="light"]) #theme-toggle {
+        color: #999;
+    }
+
+    html:not([data-theme="light"]) #sun-icon {
+        display: none;
+    }
+
+    html:not([data-theme="light"]) #moon-icon {
+        display: block;
+    }
+
+    html:not([data-theme="light"]) #copyright {
+        color: #999;
+    }
+}
