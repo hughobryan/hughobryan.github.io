@@ -162,9 +162,9 @@ html[data-theme="dark"] #copyright {
 
     #theme-toggle {
         position: static;
-        padding: 12px 24px;
-        font-size: 18px;
-        min-height: 48px;
+        padding: 10px 20px;
+        font-size: 16px;
+        min-height: 44px;
     }
 
     #copyright {
