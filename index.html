@@ -3,39 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aolus</title>
+    <title>Aolus - Find Factories to Build Your Dreams</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <body>
-<div id="container">
-    <div id="content">
-        <div id="logo">
-            <svg
-                viewBox="0 0 57 52"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-            >
+
+<!-- Navigation -->
+<nav id="navbar">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">
+            <svg viewBox="0 0 57 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M28.8441 0.971215C18.3924 -0.0351653 8.84429 41.742 8.84429 41.742C8.84429 41.742 18.1418 13.0008 28.9289 10.5233C35.093 9.10761 42.9973 20.9196 42.9973 20.9196C42.9973 20.9196 35.8118 1.64214 28.8441 0.971215Z" fill="#1A1A4E"/>
                 <path d="M55.3288 47.3295C61.4262 38.7813 30.0202 9.62377 30.0202 9.62377C30.0202 9.62377 50.262 32.0463 47.014 42.6269C45.1581 48.673 30.9765 49.6123 30.9765 49.6123C30.9765 49.6123 51.2639 53.0283 55.3288 47.3295Z" fill="#1A1A4E"/>
                 <path d="M1.29125 47.1494C5.64553 56.704 46.5997 44.0843 46.5997 44.0843C46.5997 44.0843 17.0603 50.403 9.52119 42.2998C5.2131 37.6695 11.4904 24.9182 11.4904 24.9182C11.4904 24.9182 -1.61161 40.7797 1.29125 47.1494Z" fill="#1A1A4E"/>
             </svg>
+            <span class="nav-logo-text">Aolus</span>
+        </a>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <a href="mailto:contact@aolus.io" class="btn-contact">Contact Us</a>
+            <button id="theme-toggle" class="nav-theme-toggle" aria-label="Toggle dark mode">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+            </button>
         </div>
-        <p id="coming-soon">The next generation of manufacturing is upon us.</p>
     </div>
-</div>
-<footer>
-    <button id="theme-toggle" aria-label="Toggle dark mode">
-        <span id="dark-text">Dark mode</span>
-        <span id="light-text">Light mode</span>
-    </button>
-    <p id="copyright">© 2026</p>
+</nav>
+
+<!-- Section 1: Hero -->
+<section id="hero">
+    <div class="hero-content">
+        <h1>Find factories to create <span class="rotating-words"><span class="rotating-word active">Apparel</span><span class="rotating-word">Consumer Electronics</span><span class="rotating-word">Cosmetics</span><span class="rotating-word">Toys</span><span class="rotating-word">Furniture</span><span class="rotating-word">Games</span><span class="rotating-word">Textiles</span><span class="rotating-word">Anything</span></span></h1>
+        <p class="hero-subtitle">Aolus makes it easier for companies to find factories that make products come to life.</p>
+        <a href="mailto:contact@aolus.io" class="btn-hero">Contact Us</a>
+    </div>
+</section>
+
+<!-- Section 2: Database Showcase -->
+<section id="database-showcase">
+    <div class="db-showcase-sticky">
+        <div class="db-showcase-content">
+            <h2>A global supplier network at your fingertips<sup><a href="#fn1" class="footnote-ref">1</a></sup></h2>
+            <p class="db-showcase-subtitle">The Aolus database has over <strong>1,000 suppliers</strong> across <strong>41 countries</strong>, spanning apparel, furniture, cosmetics, consumer electronics, and more.</p>
+        </div>
+
+        <div class="db-showcase-screen">
+            <img src="assets/database-screenshot-light_v1.png" alt="Aolus Database Interface" class="db-showcase-image">
+            <img src="assets/database-screenshot-dark_v1.png" alt="Aolus Database Interface" class="db-showcase-image db-showcase-image-dark">
+
+            <!-- Highlight annotations (positioned over the screenshot) -->
+            <div class="db-highlight db-highlight-1">
+                <div class="highlight-pulse"></div>
+                <div class="highlight-label">
+                    <span class="highlight-title">Advanced Filters</span>
+                    <span class="highlight-desc">Search by category, location, certifications, and more</span>
+                </div>
+            </div>
+
+            <div class="db-highlight db-highlight-2">
+                <div class="highlight-pulse"></div>
+                <div class="highlight-label">
+                    <span class="highlight-title">Detailed Profiles</span>
+                    <span class="highlight-desc">Capacity, MOQ, lead times, certifications, and contact info</span>
+                </div>
+            </div>
+
+            <div class="db-highlight db-highlight-3">
+                <div class="highlight-pulse"></div>
+                <div class="highlight-label">
+                    <span class="highlight-title">Smart Search</span>
+                    <span class="highlight-desc">Find manufacturers by product, location, or specialty</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 3: Manufacturer Deep-Dive -->
+<section id="mfg-showcase">
+    <div class="mfg-showcase-sticky">
+        <div class="mfg-showcase-screen">
+            <img src="assets/manufacturer-screenshot-light_v1.png" alt="Aolus Manufacturer Profile" class="mfg-showcase-image">
+            <img src="assets/manufacturer-screenshot-dark_v1.png" alt="Aolus Manufacturer Profile" class="mfg-showcase-image mfg-showcase-image-dark">
+
+            <div class="mfg-highlight mfg-highlight-1">
+                <div class="highlight-pulse"></div>
+                <div class="highlight-label highlight-label-right">
+                    <span class="highlight-title">At-a-Glance Stats</span>
+                    <span class="highlight-desc">Capacity, MOQ, lead time, and employee count in one view</span>
+                </div>
+            </div>
+
+            <div class="mfg-highlight mfg-highlight-2">
+                <div class="highlight-pulse"></div>
+                <div class="highlight-label highlight-label-right">
+                    <span class="highlight-title">Products &amp; Capabilities</span>
+                    <span class="highlight-desc">See exactly what they make and the services they offer</span>
+                </div>
+            </div>
+
+            <div class="mfg-highlight mfg-highlight-3">
+                <div class="highlight-pulse"></div>
+                <div class="highlight-label highlight-label-right">
+                    <span class="highlight-title">Direct Contact</span>
+                    <span class="highlight-desc">Website, email, and phone — reach out instantly</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mfg-showcase-content">
+            <h2>Deep-dive into every manufacturer<sup><a href="#fn2" class="footnote-ref">2</a></sup></h2>
+            <p class="mfg-showcase-subtitle">Each profile gives you the full picture — from <strong>production capacity</strong> and <strong>certifications</strong> to <strong>factory locations</strong> and direct contact details — so you can evaluate suppliers with confidence.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: Founders -->
+<section id="founders">
+    <div class="founders-inner">
+        <h2>Built by experts in manufacturing and operations<sup><a href="#fn3" class="footnote-ref">3</a></sup></h2>
+        <p class="founders-subtitle">Our team brings experience from leading companies in consulting, finance, payments, and engineering.</p>
+        <div class="logo-grid">
+            <div class="company-logo" aria-label="McKinsey & Company">
+                <img src="assets/logos/mckinsey.png" alt="McKinsey & Company">
+            </div>
+            <div class="company-logo" aria-label="Wealthfront">
+                <img src="assets/logos/wealthfront.png" alt="Wealthfront">
+            </div>
+            <div class="company-logo" aria-label="Visa">
+                <img src="assets/logos/visa.png" alt="Visa">
+            </div>
+            <div class="company-logo" aria-label="Georgia Tech">
+                <img src="assets/logos/georgia-tech.png" alt="Georgia Institute of Technology">
+            </div>
+            <div class="company-logo" aria-label="UC Berkeley">
+                <img src="assets/logos/berkeley-blue.svg" alt="UC Berkeley">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer / Contact -->
+<footer id="contact">
+    <div class="footer-inner">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <svg viewBox="0 0 57 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M28.8441 0.971215C18.3924 -0.0351653 8.84429 41.742 8.84429 41.742C8.84429 41.742 18.1418 13.0008 28.9289 10.5233C35.093 9.10761 42.9973 20.9196 42.9973 20.9196C42.9973 20.9196 35.8118 1.64214 28.8441 0.971215Z" fill="#1A1A4E"/>
+                    <path d="M55.3288 47.3295C61.4262 38.7813 30.0202 9.62377 30.0202 9.62377C30.0202 9.62377 50.262 32.0463 47.014 42.6269C45.1581 48.673 30.9765 49.6123 30.9765 49.6123C30.9765 49.6123 51.2639 53.0283 55.3288 47.3295Z" fill="#1A1A4E"/>
+                    <path d="M1.29125 47.1494C5.64553 56.704 46.5997 44.0843 46.5997 44.0843C46.5997 44.0843 17.0603 50.403 9.52119 42.2998C5.2131 37.6695 11.4904 24.9182 11.4904 24.9182C11.4904 24.9182 -1.61161 40.7797 1.29125 47.1494Z" fill="#1A1A4E"/>
+                </svg>
+                <span>Aolus</span>
+            </div>
+            <p class="footer-tagline">The next generation of manufacturing.</p>
+        </div>
+        <div class="footer-right">
+            <p class="footer-contact-label">Get in touch</p>
+            <a href="mailto:contact@aolus.io" class="footer-email">contact@aolus.io</a>
+        </div>
+    </div>
+    <div class="footer-footnotes">
+        <p id="fn1" class="footnote"><sup>1</sup> Not endorsed by manufacturers shown here. Information being verified.</p>
+        <p id="fn2" class="footnote"><sup>2</sup> Not endorsed by Thygesen Apparel Vietnam. Information being verified.</p>
+        <p id="fn3" class="footnote"><sup>3</sup> Not endorsed by these institutions.</p>
+    </div>
+    <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Aolus. All rights reserved.</p>
+    </div>
 </footer>
+
 <script>
+    // Theme toggle
     const toggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
 
@@ -52,6 +206,159 @@
         html.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
     });
+
+    // Navbar background on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+    // Fade-in on scroll
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // Rotating words in hero
+    const words = document.querySelectorAll('.rotating-word');
+    let currentWord = 0;
+    const wordInterval = 2000;
+
+    function rotateWords() {
+        const current = words[currentWord];
+        current.classList.add('exit');
+        current.classList.remove('active');
+
+        currentWord = (currentWord + 1) % words.length;
+        const next = words[currentWord];
+        next.classList.remove('exit');
+        // Force reflow so the entering word starts from translateY(100%)
+        void next.offsetWidth;
+        next.classList.add('active');
+    }
+
+    setInterval(rotateWords, wordInterval);
+
+    // Database showcase scroll animation
+    // Phases (by scroll progress through the 400vh section):
+    //   0.00–0.20  Slide in from right viewport edge to center
+    //   0.20–0.40  Highlight 1 fades in
+    //   0.40–0.60  Highlight 2 fades in
+    //   0.60–0.80  Highlight 3 fades in
+    //   0.80–1.00  All visible, hold
+
+    const dbShowcase = document.getElementById('database-showcase');
+    const dbScreen = document.querySelector('.db-showcase-screen');
+    const highlights = document.querySelectorAll('.db-highlight');
+
+    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
+
+    function updateShowcaseAnimation() {
+        if (!dbShowcase || !dbScreen) return;
+
+        const rect = dbShowcase.getBoundingClientRect();
+        const stickyTop = rect.top;
+        const sectionHeight = dbShowcase.offsetHeight;
+        const viewportH = window.innerHeight;
+
+        const scrollableDistance = sectionHeight - viewportH;
+        const scrolled = -stickyTop;
+        const progress = Math.max(0, Math.min(1, scrolled / scrollableDistance));
+
+        // --- Phase: Slide in (0 → 0.20) ---
+        const enterEnd = 0.20;
+        // --- Phase: Highlights appear sequentially, then hold ---
+        const hlStarts = [0.20, 0.40, 0.60];
+
+        let translateX, opacity;
+
+        if (progress <= enterEnd) {
+            const t = easeOutCubic(progress / enterEnd);
+            translateX = 120 * (1 - t);
+            opacity = t;
+        } else {
+            translateX = 0;
+            opacity = 1;
+        }
+
+        dbScreen.style.transform = `translateX(${translateX}vw)`;
+        dbScreen.style.opacity = opacity;
+
+        // Highlights — each fades in at its start and stays
+        highlights.forEach((hl, i) => {
+            if (progress >= hlStarts[i]) {
+                hl.classList.add('active');
+            } else {
+                hl.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateShowcaseAnimation, { passive: true });
+    window.addEventListener('resize', updateShowcaseAnimation);
+    updateShowcaseAnimation();
+
+    // Manufacturer showcase scroll animation (mirrored — enters from left)
+    const mfgShowcase = document.getElementById('mfg-showcase');
+    const mfgScreen = document.querySelector('.mfg-showcase-screen');
+    const mfgHighlights = document.querySelectorAll('.mfg-highlight');
+
+    function updateMfgAnimation() {
+        if (!mfgShowcase || !mfgScreen) return;
+
+        const rect = mfgShowcase.getBoundingClientRect();
+        const stickyTop = rect.top;
+        const sectionHeight = mfgShowcase.offsetHeight;
+        const viewportH = window.innerHeight;
+
+        const scrollableDistance = sectionHeight - viewportH;
+        const scrolled = -stickyTop;
+        const progress = Math.max(0, Math.min(1, scrolled / scrollableDistance));
+
+        const enterEnd = 0.20;
+        const hlStarts = [0.20, 0.40, 0.60];
+
+        let translateX, opacity;
+
+        if (progress <= enterEnd) {
+            const t = easeOutCubic(progress / enterEnd);
+            translateX = -120 * (1 - t);
+            opacity = t;
+        } else {
+            translateX = 0;
+            opacity = 1;
+        }
+
+        mfgScreen.style.transform = `translateX(${translateX}vw)`;
+        mfgScreen.style.opacity = opacity;
+
+        mfgHighlights.forEach((hl, i) => {
+            if (progress >= hlStarts[i]) {
+                hl.classList.add('active');
+            } else {
+                hl.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateMfgAnimation, { passive: true });
+    window.addEventListener('resize', updateMfgAnimation);
+    updateMfgAnimation();
 </script>
 </body>
 </html>
